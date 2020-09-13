@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>the next web</title>
+    <link rel="stylesheet" href="next.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container-fluid">
+     <header>
+       <div class="navbar-expand-lg">
+           <div class="d-xs-none d-sm-none d-xl-block">
+        <p class="d-xs-block d-sm-block d-md-block cloudy"><img src="./image/cloudy.PNG"><strong> 26&deg; NAIROBI,KE></strong></p>
+           </div>
+        <div class="row d-flex">
+           
+            <div class="col-3 d-xs-none d-sm-none d-xl-block">
+            <date>Thur,Aug 27,2020</date>
+            </div>
+            <div class="col-6 d-xs-block d-sm-block d-md-block logo">
+           <img src="data:image/png;base64,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" alt="newesweek">
+            </div>
+            
+            <div class="col-3 col-xs-10  p-2 navbar-button ">
+          <button type="button" style="color:white;" class="btn d-none d-md-inline font-weight-bold d-lg-inline d-xl-inline" data-toggle="button" aria-pressed="false">LOGIN</button>
+                <button type="button" class="btn subscribe-button font-weight-bold" data-toggle="button" aria-pressed="false">SUBSCRIPTION <span class=" d-none d-ld-inline d-md-inline d-xl-inline"> OFFERS &gt;</span></button>
+            </div>
+
+        </div>
+    </div>
+ </header>
+
+        <nav class="navbar navbar-expand-lg  d-lg-none d-md-none d-xl-block ">
+ <div class="collapse navbar-collapse" id="navbarContent">
+    <ul class="navbar-nav navbar-expand-lg row d-flex nav-item1 ">
+        <li class="nav-item mr-3 ml-5">U.S.</li>
+        <li class="nav-item mr-3 border-left">World</li>
+        <li class="nav-item mr-3 border-left">Business</li>
+        <li class="nav-item mr-3 border-left">Tech & Science</li>
+        <li class="nav-item mr-2 border-left">Culture</li>
+        <li class="nav-item mr-2 border-left">Newsgeek</li>
+        <li class="nav-item mr-3 border-left">Sports</li>
+        <li class="nav-item mr-2 border-left">Health</li>
+        <li class="nav-item mr-3 border-left">The Debate</li>
+        <li class="nav-item mr-3 border-left">Vantage</li>
+        <li class="nav-item mr-3 border-left">Weather</li>
+        <li><input type="text" placeholder="Search.." name="search" class="Search" ><i class="fa fa-search" aria-hidden="true"></i></li>
+    </ul>
+    </div>
+    </nav>
+    <nav class="navbar-nav navbar-expand-lg navbar-light bg-white mb-1 d-md-none d-sm-none d-lg-none d-xl-block">
+        <ul class="navbar-nav navbar-expand-lg">
+            <li class="nav-item"><a class="nav-link font-weight-bold text-dark" href="#">TRENDING</a></li>
+            <li class="nav-item"><a class="nav-link font-weight-bold" href="#">DONALD TRUMP</a></li>
+            <li class="nav-item"><a class="nav-link font-weight-bold" href="#">JOE BIDEN</a></li>
+            <li class="nav-item"><a class="nav-link font-weight-bold" href="#">CHINA</a></li>
+            <li class="nav-item"><a class="nav-link font-weight-bold" href="#">CORONAVIRUS</a></li>
+            <li class="nav-item"><a class="nav-link font-weight-bold " href="#">2020 ELECTIONS</a></li>
+        </ul>
+    </nav>
+<main class="d-flex align-items-center">
+    <div class="container-fluid bg-white">
+        <div class="row">
+            <div class="col-md-3 featured-left">
+
+                <p class="text-muted font-weight-bold">FEATURED STORIES</p>
+
+                <div class=" featured-stories ">
+                    <img style="width: 300px;" src="https://d.newsweek.com/en/full/1629910/house-intelligence-adam-schiff-russia.webp?w=397&h=265&q=90&f=0790d35ace7e2ff90a324dec5de1b591">
+                    <h3>Adam Schiff Says Trump Views Racial Unrest, Russian Interference as Useful</h3>
+                    <p>House Intelligence Committee Chairman Adam Schiff said President Donald Trump is "willfully fanning the flames" of racial unrest and violence because his campaign believes it helps his re-election chances.</p>
+                </div>
+                <div class="featured-stories ">
+                    <img style="width: 300px;" src="https://d.newsweek.com/en/full/1629905/breonna-taylor.webp?w=397&h=265&q=90&f=76c467011e8e80847124cb96b3f11af9">
+                    <h3>Adam Schiff Says Trump Views Racial Unrest, Russian Interference as Useful</h3>
+                    <p>House Intelligence Committee Chairman Adam Schiff said President Donald Trump is "willfully fanning the flames" of racial unrest and violence because his campaign believes it helps his re-election chances.</p>
+                </div>
+
+                <div class="featured-stories ">
+                    <img style="width: 300px;"  src="https://d.newsweek.com/en/full/1629910/house-intelligence-adam-schiff-russia.webp?w=397&h=265&q=90&f=0790d35ace7e2ff90a324dec5de1b591">
+                    <h3>Adam Schiff Says Trump Views Racial Unrest, Russian Interference as Useful</h3>
+                    <p>House Intelligence Committee Chairman Adam Schiff said President Donald Trump is "willfully fanning the flames" of racial unrest and violence because his campaign believes it helps his re-election chances.</p>
+                </div>
+
+                <div class="featured-stories ">
+                    <img style="width: 300px;" src="https://d.newsweek.com/en/full/1629910/house-intelligence-adam-schiff-russia.webp?w=397&h=265&q=90&f=0790d35ace7e2ff90a324dec5de1b591">
+                    <h3>Adam Schiff Says Trump Views Racial Unrest, Russian Interference as Useful</h3>
+                    <p>House Intelligence Committee Chairman Adam Schiff said President Donald Trump is "willfully fanning the flames" of racial unrest and violence because his campaign believes it helps his re-election chances.</p>
+                </div>
+
+                <div class="featured-stories ">
+                    <img style="width: 300px;" src="https://d.newsweek.com/en/full/1629910/house-intelligence-adam-schiff-russia.webp?w=397&h=265&q=90&f=0790d35ace7e2ff90a324dec5de1b591">
+                    <h3>Adam Schiff Says Trump Views Racial Unrest, Russian Interference as Useful</h3>
+                    <p>House Intelligence Committee Chairman Adam Schiff said President Donald Trump is "willfully fanning the flames" of racial unrest and violence because his campaign believes it helps his re-election chances.</p>
+                </div>
+            </div>
+            <!--TOP STORY-->
+
+            <div class="col-md-6 featured-stories-center">
+                <p class="text-muted font-weight-bold">TOP STORY</p>
+                    <div class="featured-stories">
+                        <img style =" " src="https://d.newsweek.com/en/full/1629926/portland-protests.webp?w=591&h=364&f=fb2609924e2f5f4e378ecc7af68484c7">
+                        <h3>Biden Condemns Violence in Portland While Trump Blames 'Radical Left' Dems</h3>
+                        <p>Saturday turned deadly as a group of Donald Trump supporters clashed in the Portland streets with Black Lives Matter demonstrators.</p>
+                    </div>
+
+                    <p class="text-muted font-weight-bold">MY TURN</p>
+
+                <div class="row">
+                    <div class="my-turn col-md-4">
+                        <img style="width:180px;" src="https://d.newsweek.com/en/full/1627697/child-psychologist-therapy-family-kids-parent.webp?w=397&h=397&f=3a3830421357835a688e99046ca9670b">
+                        <figcaption class="text-muted">'The Top 5 Questions I Get Asked As A Child Psychologist'</figcaption>
+                    </div>
+
+                    <div class="my-turn col-md-4">
+                        <img style="width:180px;" src="https://d.newsweek.com/en/full/1629191/homecoming-marriage-love.webp?w=397&h=397&f=e9b597d24c5723e4907c244fd49464ec">
+                        <figcaption class="text-muted">'The Top 5 Questions I Get Asked As A Child Psychologist'</figcaption>
+                    </div>
+                    <div class="my-turn col-md-4">
+                        <img style="width:180px;" src="https://d.newsweek.com/en/full/1628165/coronavirus-palau-hotels-covid-19.webp?w=397&h=397&f=ee02fef7c0fe7eea1410c63d3c2b1fbf">
+                        <figcaption class="text-muted">'The Top 5 Questions I Get Asked As A Child Psychologist'</figcaption>
+                    </div>
+                </div>
+
+                <div class="mt-3 mb-3 text-muted font-weight-bold">CULTURE & TRAVEL</div>
+
+                    <div class="row">
+                        <div class="my-turn col-md-4">
+                        <img style="width:180px;" src="https://d.newsweek.com/en/full/1627897/cul-map-women-banner.webp?w=397&h=397&l=50&t=77&f=7b0b507bd4d7cb5b471c5a1343811b39">
+                        <figcaption class="text-muted">'The Top 5 Questions I Get Asked As A Child Psychologist'</figcaption>
+                    </div>
+
+                    <div class="my-turn col-md-4">
+                        <img style="width:180px;" src="https://d.newsweek.com/en/full/1628308/kellee-edwards-vultee-bt-13-aircraft.webp?w=397&h=397&f=415ed1209407b816f9a935d18e22c5a9">
+                        <figcaption class="text-muted">'The Top 5 Questions I Get Asked As A Child Psychologist'</figcaption>
+                    </div>
+                    </div>
+                    </div>
+        
+                    <footer class="container-fluid  ">
+                        <div class="d-md-flex hada justify-content-between border-bottom">
+                            <div class="d-md-flex align-items-end mb-1">
+                                <img src="./image/footernewsweek.PNG">
+                                <span>&copy; 2020 NEWSWEEK</span>
+                            </div>
+                       
+                        <div class="social d-flex align-items-end">
+                            <a href="#" class="mr-2 text-muted"><i class="fab fa-facebook-square"></i></a>
+                            <a href="#" class="mr-2 text-muted"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="mr-2 text-muted"><i class="fab fa-instagram"></i></a>
+                            <a href="#" class="mr-2 text-muted"><i class="fab fa-tumblr"></i></a>
+                            <a href="#" class="mr-2 text-muted"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                        </div>
+                        <div class="border-top pt-1 pb-3">
+                            <div class="d-flex">
+                                <span class="text-capitalize text-secondary mt-1 pt-1 font-weight-bold mr-2">editions:</span>
+                                <ul class="nav footers">
+                                    <li class="nav-item pr-2">
+                                        <a class="  nav-link" href="#">U.S Edition</a>
+                                    </li>
+                                    <li class="nav-item pr-2">
+                                        <a class="  nav-link border-left" href="#">Pakistan</a>
+                                    </li>
+                                    <li class="nav-item pr-2">
+                                        <a class="  nav-link border-left" href="#">Polska</a>
+                                    </li>
+                                    <li class="nav-item pr-2">
+                                        <a class="  nav-link border-left" href="#">Romania</a>
+                                    </li>
+                                    <li class="nav-item pr-2">
+                                        <a class="  nav-link border-left" href="#">Pidgin</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <ul class="nav footer-links footers">
+                                <li class="nav-item pr-2">
+                                    <a class=" nav-link" href="#">About Us</a>
+                                </li>
+                                <li class="nav-item pr-2">
+                                    <a class=" nav-link border-left" href="#">Corrections</a>
+                                </li>
+                                <li class="nav-item pr-2">
+                                    <a class=" nav-link border-left" href="#">Contact Us</a>
+                                </li>
+                                <li class="nav-item pr-2">
+                                    <a class=" nav-link border-left" href="#">Editorial Guideline</a>
+                                </li>
+                                <li class="nav-item pr-2">
+                                    <a class=" nav-link border-left" href="#">Advertize</a>
+                                </li>
+                                <li class="nav-item pr-2">
+                                    <a class=" nav-link border-left" href="#">Copyright</a>
+                                </li>
+                                <li class="nav-item pr-2">
+                                    <a class=" nav-link border-left" href="#">Terms Conditions</a>
+                                </li>
+                                <li class="nav-item pr-2">
+                                    <a class=" nav-link border-left" href="#">Privacy Policy</a>
+                                </li>
+                                <li class="nav-item pr-2">
+                                    <a class=" nav-link border-left" href="#">Cookie Policy</a>
+                                </li>
+                                <li class="nav-item pr-2">
+                                    <a class=" nav-link border-left" href="#">Terms of Sale</a>
+                                </li>
+            
+                                <li class="nav-item pr-2">
+                                    <a class=" nav-link border-left" href="#">Archive</a>
+                                </li>
+                                <li class="nav-item pr-2">
+                                    <a class=" nav-link border-left" href="#">Announcements</a>
+                                </li>
+                                <li class="nav-item pr-2">
+                                    <a class=" nav-link border-left" href="#">Consent preferences</a>
+                                </li>
+                            </ul>
+                        </div>
+                
+                    </footer>
+                    </footer>
+                    
+
+
+  
+</div>
+</div>
+</main>
+
+
+</body>
+</html>

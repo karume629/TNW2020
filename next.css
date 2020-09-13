@@ -1,0 +1,63 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border-radius: 0 !important;
+}
+body{
+   background-color: whitesmoke;
+   
+   
+}
+header{
+    height: 130px;
+    background-color: #f72210;
+    padding: 10px 10px;
+    color: white;
+}
+.subscribe-button {
+    background-color: #ffe400;
+    color: black;
+    border-radius: 20px;
+    align-items: center;
+  }
+
+  .navbar-button {
+    margin-top: 26px;
+    text-align: right;
+  }
+
+@media (max-width: 992px) {
+    .navbar-nav {
+      margin-top: 0;
+    
+    }
+  
+    .subscribe-button {
+      padding: 4px;
+      font-size: 12px;
+    }
+    .logo img {
+        margin-top: 7px;
+        align-self: center;
+      }
+    }
+    .navbar-nav li{ 
+      list-style-type: none;
+      padding-left: 10px;
+      font-weight: bold;  
+  }
+  #navbarContent{
+      background-color: white;
+      height: 40px;
+      margin-top: -6px;
+      margin-bottom: -5px;
+      margin-left: -15px;
+      margin-right: -15px;
+     
+     
+  }
+
+  
+  
+
